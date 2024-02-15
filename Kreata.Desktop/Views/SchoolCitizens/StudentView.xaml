@@ -45,8 +45,8 @@
                 <xwpftk:IntegerUpDown Value="{Binding FilteredMaxBirthYear}"></xwpftk:IntegerUpDown>
                 <Label Margin="20 0 2 2">Nem</Label>
                 <CheckBox IsChecked="{Binding IsHaveGenderSearching}" Margin="2 6 0 0"></CheckBox>
-                <RadioButton Margin="4 6 0 0">nő</RadioButton>
-                <RadioButton Margin="4 6 10 0">férfi</RadioButton>
+                <RadioButton GroupName="Gender" IsChecked="{Binding IsWooman}" Margin="4 6 0 0">nő</RadioButton>
+                <RadioButton GroupName="Gender" Margin="4 6 10 0">férfi</RadioButton>
                 <Button MinWidth="80" Margin="10 0 0 2" Command="{Binding DoSearchingAndFilteringCommand}">Szűrés</Button>
                 <Button MinWidth="80" Margin="3 0 10 2" Command="{Binding DoResetFilterAndSerachParameterCommand}">Vissza</Button>
             </StackPanel>
@@ -85,7 +85,7 @@
         <!--Bemeneti vezérlők (input conrolers) -->
         <TextBox HorizontalAlignment="Left" MinWidth="300" Grid.Row="2" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding SelectedStudent.LastName}"></TextBox>
         <TextBox HorizontalAlignment="Left" MinWidth="300" Grid.Row="3" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding SelectedStudent.FirstName}"></TextBox>
-        <DatePicker HorizontalAlignment="Left" MinWidth="120" Grid.Row="4" Grid.Column="1" Margin="2 2 2 2" SelectedDate="{Binding SelectedStudent.BirthsDay}"></DatePicker>
+        <DatePicker HorizontalAlignment="Left" MinWidth="120" Grid.Row="4" Grid.Column="1" Margin="2 2 2 2" SelectedDate="{Binding SelectedStudent.BirthDay}"></DatePicker>
         <xwpftk:IntegerUpDown HorizontalAlignment="Left" MinWidth="40" Grid.Row="5" Grid.Column="1" Margin="2 2 100 2" Minimum="9" Maximum="14" Value="{Binding SelectedStudent.SchoolYear}"></xwpftk:IntegerUpDown>
         <StackPanel Grid.Row="6" Grid.Column="1">
             <RadioButton GroupName="schoolclass" Margin="2 4 2 2">a  osztály</RadioButton>
