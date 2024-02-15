@@ -38,6 +38,7 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
         public uint FileteredMinBirthYear { get; set; } = 0;
         public uint FilteredMaxBirthYear { get; set; } = uint.MaxValue;
         public string SerchedName { get; set; } = string.Empty;
+        public bool IsHaveGenderSearching { get; set; } = false;
 
         public StudentViewModel()
         {
