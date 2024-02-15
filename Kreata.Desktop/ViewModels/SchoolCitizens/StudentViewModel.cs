@@ -131,7 +131,10 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
             SerchedName = string.Empty;
             FileteredMinBirthYear = 0;
             FilteredMaxBirthYear = uint.MaxValue;
-            await InitializeAsync();
+            IsHaveGenderSearching = false;
+            IsWooman = true;
+            await UpdateView();
+            
         }
         private void SetFilteredMinMaxYear()
         {
