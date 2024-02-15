@@ -44,7 +44,7 @@
                 <Label>és vége:</Label>
                 <xwpftk:IntegerUpDown Value="{Binding FilteredMaxBirthYear}"></xwpftk:IntegerUpDown>
                 <Label Margin="20 0 2 2">Nem</Label>
-                <CheckBox IsChecked="False" Margin="2 6 0 0"></CheckBox>
+                <CheckBox IsChecked="{Binding IsHaveGenderSearching}" Margin="2 6 0 0"></CheckBox>
                 <RadioButton Margin="4 6 0 0">nő</RadioButton>
                 <RadioButton Margin="4 6 10 0">férfi</RadioButton>
                 <Button MinWidth="80" Margin="10 0 0 2" Command="{Binding DoSearchingAndFilteringCommand}">Szűrés</Button>
