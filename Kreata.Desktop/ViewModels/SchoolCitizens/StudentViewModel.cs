@@ -103,8 +103,8 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
                 {
                     List<Student> students = await _studentService.SelectAllStudentAsync();
                     Students = new ObservableCollection<Student>(students);
+                    SetFilteredMinMaxYear();
                 }
-                SetFilteredMinMaxYear();
             }
         }
 
