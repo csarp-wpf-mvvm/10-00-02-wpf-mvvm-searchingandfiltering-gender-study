@@ -10,7 +10,9 @@ namespace Kreta.Desktop.ViewModels.SchoolCitizens
             {
                 MinYearOfBirth = studentViewModel.FileteredMinBirthYear,
                 MaxYearOfBirth = studentViewModel.FilteredMaxBirthYear,
-                Name = studentViewModel.SerchedName
+                Name = studentViewModel.SerchedName,
+                IsWooman = studentViewModel.IsWooman,
+                HaveGender = studentViewModel.IsHaveGenderSearching,
             };
         }
     }
